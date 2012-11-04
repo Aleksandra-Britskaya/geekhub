@@ -1,0 +1,95 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
+	<meta name="description" content="Урок 3. Формы: теги и их атрибуты" />
+	<meta name="keywords" content="формы, теги, атрибуты" />
+	<title>Урок 3. Формы: теги и их атрибуты</title>
+ </head>
+ <body>
+	<h1>Урок 3. Формы: теги и их атрибуты</h1>
+	<h2>Расскажите немного о себе...</h2>
+	<p>Попробуйте создать аналогичную форму. Для целей демонстрации вполне подойдут и вымышленные.</p>
+		<form action="mailto:les78v@ukr.net" method="post" id="interview">	
+			<fieldset>
+				<legend><strong>Коротко о себе</strong></legend>
+					<p><label for="firstname">Имя:</label>
+					<input type="text" name="firstname" id="firstname" maxlength="50" size="50" /></p>
+					<p><label for="surname">Фамилия:</label>
+					<input type="text" name="surname" id="surname" maxlength="50" size="50" /></p>
+					<p>Пол:<input type="radio" name="gender"  value="мужской" id="man" />мужской
+					<input type="radio" name="gender"  value="женский" id="woman" />женский</p>
+					<label for="age">Возраст:</label>
+					<input type="text" name="age" id="age" maxlength="10" size="10" /> лет
+					
+			</fieldset>
+			<p></p>
+				
+			<fieldset>
+				<legend><strong>Подробнее о себе</strong></legend>
+					<input type="radio" name="gender2"  value="Молодой человек" id="man2" /> Молодой человек<br />
+					<input type="radio" name="gender2"  value="Девушка" id="woman2" /> Девушка<br /> 
+					<input type="text" name="date-of-birth" id="date-of-birth" maxlength="35" size="35" />
+					<label for="date-of-birth">Дата рождения</label><br />
+					<input type="text" name="family-status" id="family-status" maxlength="35" size="35" />
+					<label for="family-status">Семейное положение</label><br />
+					<input type="text" name="social-status" id="social-status" maxlength="35" size="35" />
+					<label for="social-status">Социальный статус</label><br />
+					<input type="text" name="home" id="home" maxlength="35" size="35" />
+					<label for="home">Местожительство</label><br />
+					
+					<p><strong>Что вы обычно делаете на выходных:</strong></p>
+					<input type="checkbox" name="holiday"  value="Сплю" id="sleep" /> Сплю<br />
+					<input type="checkbox" name="holiday"  value="Гуляю с друзьями" id="walking" /> Гуляю с друзьями<br />
+					<input type="checkbox" name="holiday"  value="Хожу на рыбалку" id="fishing" /> Хожу на рыбалку<br />
+					<input type="checkbox" name="holiday"  value="Играю в игры" id="play" /> Играю в игры<br />
+					
+					<p><strong>Рассказать о формах в книге, посвященной HTML:</strong></p>
+					<select name="books[]">
+						<option selected="selected" value="site">Site frequency:</option>
+						<option value="Tags">Select</option>
+						<option value="Option">Option</option>
+						<option value="Atributes">Atributes</option>
+					</select>
+					
+					<p><strong>Сколько книг Вы прочитали за свою жизнь?</strong></p>
+					<input type="radio" name="number"  value="0-10" id="ten" /> 0-10<br />
+					<input type="radio" name="number"  value="11-20" id="twenty" /> 11-20<br />
+					<input type="radio" name="number"  value="21-50" id="fifty" /> 21-50<br />
+					<input type="radio" name="number"  value="50+" id="fifty-one" /> 50+<br />
+					
+					<p><strong>Ваши комментарии:</strong></p>
+					<textarea name="comment" cols="50" rows="10"></textarea>
+					
+					<p><select size="3" multiple="multiple" name="position">
+						<option value="Первая позиция">Первая позиция</option>
+						<option value="Вторая позиция">Вторая позиция</option>
+						<option value="Третья позиция">Третья позиция</option>
+						<option value="Четвертая позиция">Четвертая позиция</option>
+						<option value="Пятая позиция">Пятая позиция</option>
+					</select></p>
+			</fieldset>
+				<p></p>
+					
+			<fieldset><legend><strong>И в заключении</strong></legend>
+				<p><input type="text" name="end" value="Это поле было введено до вас" id="end" maxlength="50" size="50" /></p>
+				<p><label for="Email"><strong>Email:</strong></label><br />
+					<input type="text" name="Email" id="Email" maxlength="50" size="50" /></p>
+					
+				<p><strong>Хотите подписаться на самую модную рассылку спама?</strong><br />
+				<i>Выберите категории</i></p>
+					<input type="checkbox" name="spam"  value="Оборудование" id="equipment" /> Оборудование<br />
+					<input type="checkbox" name="spam"  value="Как приготовить обеды" id="cook" /> Как приготовить обеды<br />
+					<input type="checkbox" name="spam"  value="Заработай миллион за два дня!" id="million" /> Заработай миллион за два дня!<br />
+					
+				<p><strong>На сколько сложная задача:</strong></p>
+					<input type="radio" name="problem"  value="Совсем нет" id="no" /> Совсем нет<br />
+					<input type="radio" name="problem"  value="" id="yes" /> Так себе<br />
+					<input type="radio" name="problem"  value="Молодой человек" id="kind-of" /> Еле справились<br />		
+			</fieldset>		
+					
+		<p><input type="submit" value="Отправить"/></p>
+		</form>
+</body>
+ 
+</html>
