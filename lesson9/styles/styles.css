@@ -1,0 +1,73 @@
+/*----------------------------------------------------------------------------------*/
+/*------------------------------RESET DEFAULT STYLES--------------------------------*/
+/*----------------------------------------------------------------------------------*/
+html,body                       { width:100%; height:100%; }
+body                            { padding:0; margin:0; font:12px Tahoma, sans-serif; background:#fff; color:#000; }
+div,p,a,span,em,strong,img,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,td,tr,form,fieldset,label,select,checkbox,input,textarea {
+	padding:0;
+	margin:0;
+	outline:none;
+	list-style:none;
+}
+select, input, textarea        { font-size:12px; vertical-align:middle; }
+textarea                       { vertical-align:top; }
+:focus                         { outline:none; }
+input[type=submit]             { cursor:pointer; }
+img, fieldset                  { border:0; }
+table                          { border-collapse:collapse; border-spacing:0; }
+a:link, a:visited              { font:12px Tahoma, sans-serif; color:#000; text-decoration:underline; }
+a:hover                        { text-decoration:none; }
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------DEFAULT CLASSES------------------------------*/
+/*----------------------------------------------------------------------------------*/
+.float-r           	           { float:right !important; }
+.float-l                       { float:left !important; }
+.no-float                      { float:none !important; }
+.no-border                     { border:0 !important; }
+.no-bg                         { background:none !important; }
+.no-margin                     { margin:0 !important; }
+.no-padding                    { padding:0 !important; }
+.no-display                    { display:none !important; }
+.display                       { display:block !important; }
+.inline                        { display:inline !important; }
+.overflow                      { overflow:hidden !important; }
+.align-r                       { text-align:right !important; }
+.align-l                       { text-align:left !important; }
+.align-c                       { text-align:center !important; }
+.clear                         { clear:both; }
+
+body {background: url(../images/body-bg.png) #ffeeff}
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------WRAPPER--------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+.wrapper { width:771px ; margin:0 auto; padding: 14px 4px 16px 5px; background-color:#fff; }
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------HEADER---------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+.header {background: url(../images/header-bg.jpg) no-repeat; width: 771px; height: 194px; overflow: hidden;}
+#a-logo  {margin: 37px 0px 0px 38px;display: block; width: 305px; height: 115px;}
+
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------NAV------------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------CONTENT--------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+.content {padding: 13px 35px 0px 36px;}
+.rose  { background:#fcf1f7; color:#d777b7; padding:6px 0px 8px 12px; font: 18px Georgia; font-style: Italic; }
+.blue { background:#ebf4fb; color:#4b8bbf; padding:6px 0px 8px 12px; margin: 23px 0px 11px 0px; font: 18px Georgia; font-style: Italic;}
+a.read-more  { color:#4b8bbf; font: 12px Trebuchet MS, Regular; text-decoration: none; background: url(../images/triangle.gif) no-repeat right 6px; padding-right: 9px}
+.content p  { margin: 5px 0px 7px 0px; padding: 10px 0px 0px 0px; font: 13px Trebuchet MS, Regular; border-top: 1px solid #fcf1f7;}
+p.no-line  { border-top: 0}
+.menu li { width: 136px; float: left; padding: 0 4px 0 0; }
+a.a-menu {color:#4b8bbf; font: 12px Trebuchet MS, Regular; text-decoration: none; }
+ul.menu {overflow: hidden;}
+
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------SIDEBAR--------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------FOOTER---------------------------------------*/
+/*----------------------------------------------------------------------------------*/
