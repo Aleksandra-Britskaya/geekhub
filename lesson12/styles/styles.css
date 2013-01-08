@@ -1,0 +1,83 @@
+/*----------------------------------------------------------------------------------*/
+/*------------------------------RESET DEFAULT STYLES--------------------------------*/
+/*----------------------------------------------------------------------------------*/
+html,body                       { width:100%; height:100%; }
+body                            { padding:0; margin:0; font:12px Arial, sans-serif; background:#fff; color:#000; }
+div,p,a,span,em,strong,img,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,td,tr,form,fieldset,label,select,checkbox,input,textarea {
+	padding:0;
+	margin:0;
+	outline:none;
+	list-style:none;
+}
+select, input, textarea        { font-size:12px; vertical-align:middle; }
+textarea                       { vertical-align:top; }
+:focus                         { outline:none; }
+input[type=submit]             { cursor:pointer; }
+img, fieldset                  { border:0; }
+table                          { border-collapse:collapse; border-spacing:0; }
+a:link, a:visited              { font:12px Tahoma, sans-serif, strong; text-decoration:underline; }
+a:hover                        { text-decoration:none; }
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------DEFAULT CLASSES------------------------------*/
+/*----------------------------------------------------------------------------------*/
+.float-r           	           { float:right !important; }
+.float-l                       { float:left !important; }
+.no-float                      { float:none !important; }
+.no-border                     { border:0 !important; }
+.no-bg                         { background:none !important; }
+.no-margin                     { margin:0 !important; }
+.no-padding                    { padding:0 !important; }
+.no-display                    { display:none !important; }
+.display                       { display:block !important; }
+.inline                        { display:inline !important; }
+.overflow                      { overflow:hidden !important; }
+.align-r                       { text-align:right !important; }
+.align-l                       { text-align:left !important; }
+.align-c                       { text-align:center !important; }
+.clear                         { clear:both; }
+
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------WRAPPER--------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+#wrapper { width:1080px ; margin:0 auto; }
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------HEADER---------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+
+#header  { background: url(../images/background2.jpg) no-repeat; height: 549px;} 
+#logo { margin:41px 0 1px 136px;}
+#header .grey-block { background: url(../images/grey.png); width:811px; height:405px; margin: 0 135px 22px 134px; }
+#header .grey-block .ship { margin:18px 18px;}
+#header .grey-block .rt-block  {background: url(../images/background3.jpg); width:242px; height:370px; float:right; margin:18px 18px 18px 0;}
+#header .grey-block .rt-block .rielti { margin:3px 4px 0;}
+#header .grey-block .rt-block .read { color:#B1B1B1; text-decoration:none; font: 12px Myriad Pro, Regular;  position:relative; top:-185px; left:29px;}
+#header .grey-block .rt-block .discount { position:relative; top:-135px; left:5px;}
+#header .grey-block .rt-block button { background: url(../images/search.png) no-repeat; border:none; display:block; width:105px; height:23px; position:relative; top:-11px; cursor:pointer;}
+#header .grey-block .rt-block  form  { position:relative; top:-158px; left:16px;}
+#header .grey-block .rt-block  form select { width:211px; margin-bottom:12px; padding-left:6px; color:#ACACAC; font: 12px Myriad Pro, Regular;}
+#header .lang  { float:right; margin: 100px 116px 8px 0}
+#header .lang li  { float:left; margin-right:21px;}
+#header .lang  li a { width:22px; height:13px; background:url(../images/lang.png) no-repeat; text-indent:-999em; display:block;}
+#header .lang  li a.eng { background-position:-1px -1px;}
+#header .lang  li a.ru { background-position:-43px -1px;}
+#header .lang  li a.ukr { background-position:-86px -1px;}
+
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------NAV------------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+#navbar { background:url(../images/nav-bg.png) repeat-x;}
+#navbar .nav { background:url(../images/navbar.png) no-repeat; width:813px; height:67px; display:block; margin-left:134px; }
+#navbar .nav .red  { background:url(../images/red.png) no-repeat;}
+#navbar li a { font: 12px Myriad Pro, Regular; color:#fff !important; width:132px; height:67px;  text-align: center; padding-top:27px; display:inline-block; text-decoration:none;}
+#navbar li  { margin-left:3px; width:132px; height:67px;  float:left;}
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------CONTENT--------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+#content { background:url(../images/cont-backgr.png) repeat-x;}
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------SIDEBAR--------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------FOOTER---------------------------------------*/
+/*----------------------------------------------------------------------------------*/
