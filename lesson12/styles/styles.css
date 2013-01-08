@@ -48,7 +48,7 @@ a:hover                        { text-decoration:none; }
 #logo { margin:41px 0 1px 136px;}
 #header .grey-block { background: url(../images/grey.png); width:811px; height:405px; margin: 0 135px 22px 134px; }
 #header .grey-block .ship { margin:18px 18px;}
-#header .grey-block .rt-block  {background: url(../images/background3.jpg); width:242px; height:370px; float:right; margin:18px 18px 18px 0;}
+#header .grey-block .rt-block  {background: url(../images/background3.jpg); width:242px; height:370px; position:relative; top: -390px;  left: 550px;}
 #header .grey-block .rt-block .rielti { margin:3px 4px 0;}
 #header .grey-block .rt-block .read { color:#B1B1B1; text-decoration:none; font: 12px Myriad Pro, Regular;  position:relative; top:-185px; left:29px;}
 #header .grey-block .rt-block .discount { position:relative; top:-135px; left:5px;}
