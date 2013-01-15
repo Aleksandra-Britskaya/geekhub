@@ -5,6 +5,22 @@
 	<meta name="description" content="Домашнее задание №12" />
 	<title>Домашнее задание №12</title>
 	<link rel="stylesheet" type="text/css" href="styles/styles.css" />
+	<script src="js/jquery-1.8.3.min.js"></script>
+	<script src="js/slides.min.jquery.js"></script>
+	<script>
+		$(document).ready(function() {
+ 
+			$(function(){
+                $("#slides").slides({
+					preload: true,
+					play: 3000,			
+				});
+				
+            });
+ 
+		});
+            
+        </script>
 </head>
 
 <body>
@@ -19,13 +35,29 @@
 			<li><a href="#" class="ukr">ukr</a></li>
 		</ul>
 		<div class="grey-block">
-			<img src="images/ship.jpg" class="ship" width="515" height="370" alt="пристань"/>
+			<div id="slides">
+				<div class="slides_container">
+					<div>
+						<img src="images/ship.jpg" alt="корабль">
+					</div>
+					<div>
+						<img src="images/foto2.jpg" alt="море">
+					</div>
+					<div>
+						<img src="images/foto3.jpg" alt="Черногория">
+					</div>
+					<div>
+						<img src="images/foto4.jpg" alt="остров">
+					</div>
+				</div>
+				<a href="#" class="prev"><</a><a href="#" class="next">></a>
+			</div>
 			<div class="rt-block">
 					<img src="images/rielti.png" class="rielti" width="234" height="140" alt="rielti-insight"/>
 					<a href="#" class="read">Читать подробнее &raquo</a>
 					<img src="images/discount.png" class="discount" width="122" height="171" alt="скидка"/>
 					<form>
-					<button type="submit"></button>
+					<button type="submit" class="submit">Поиск</button>
 						<select><option>Тип недвижимости</option>
 								<option>1</option>
 								<option>2</option>
@@ -53,41 +85,98 @@
 	 
 	<!-- NAVBAR -->
 	<div id="navbar">
-	 <ul class="nav">
+	 <ul>
 		<li class="red"><a href="#">Главная</a></li>
-		<li class="orange"><a href="#">Недвижимость</a></li>
-		<li class="green"><a href="#">О нас</a></li>
-		<li class="blue"><a href="#">О Черногории</a></li>
-		<li class="celadon"><a href="#">Контакты</a></li>
-		<li class="white"><a href="#">Преобретение</a></li>
+		<li><a href="#">Недвижимость</a></li>
+		<li><a href="#">О нас</a></li>
+		<li><a href="#">О Черногории</a></li>
+		<li><a href="#">Контакты</a></li>
+		<li><a href="#">Преобретение</a></li>
 	 </ul>
 	</div>
 	
-	<!-- CONTENT -->
+	<!-- CONTEINER -->
 	<div id="conteiner">
-		<div id="content">
+	
+		<!-- SIDEBAR -->
+		<div id="sidebar">
 			<ul>
-				<li>Разделы</li>
-				<li>Квартиры</li>
-				<li>Дома</li>
-				<li>Виллы</li>
-				<li>Земля</li>
-				<li>Коммерческая недвижимость</li>
+				<li class="red-w">Разделы:</li>
+				<li><a href="#">Квартиры</li>
+				<li><a href="#">Дома</li>
+				<li><a href="#">Виллы</li>
+				<li><a href="#">Земля</li>
+				<li class="no-line"><a href="#">Коммерческая недвижимость</a></li>
 			</ul>
-	
-	
-	
-	
-	
-	
-	
+			
+			<ul>
+			    <form>
+					<li class="red-w">Регистрация</li>
+					<li class="no-line"><input name="login" value="Логин" /></li>
+					<li class="no-line"><input name="password" value="Пароль" /></li>
+					<li><a href="#">Войти</a></li>
+					<li class="no-line"><a href="#">Регистрация</a></li>
+				</form>
+			</ul>
+			
+			<ul class="info">
+				<li class="red-w">Информация</li>
+				<li><a href="#">Законодательство</a></li>
+				<li><a href="#">Гражданство</a></li>
+				<li><a href="#">Статистика</a></li>
+				<li><a href="#">Виза</a></li>
+				<li><a href="#">Карта</a></li>
+				<li><a href="#">Разговорник</a></li>
+				<li><a href="#">Инфраструктура</a></li>
+				<li><a href="#">Валюта</a></li>
+				<li class="no-line"><a href="#">Население</a></li>
+			</ul>
 		</div>
-	</div>
-
-
-
+		
+		<!-- CONTENT -->
+		<div id="content">
+			<div class="block">
+				<img src="images/Tesita.gif" class="foto" id="Tesita Hill" width="404" height="304" alt="Tesita Hill"/>
+				<div class="text">
+				<h2>Tesita Hill</h2>
+				<h3>Квартиры в комплексе Tesita Hill</h3>
+				<p>Комплекс "Tesita Hill" всего в 50 метрах от песчаного пляжа, в 10 минутах ходьбы от центра курорта. В комплексе предусмотрено: магазины, супермаркет, лоби Бар, ресторан, ателье, открытый бассейн. Все квартиры имеют вид на море!</p>
+				<button class="submit">Заказать</button>
+				<p class="price">Цена от <span>42 780 &euro;</span></p>
+                <button class="more">Подробнее</button>
+				</div>
+			</div>
+			
+			<div class="block">
+				<img src="images/Black.gif" id="Tesita Hill" class="foto" width="404" height="304" alt="Tesita Hill"/>
+				<div class="text">
+				<h2>Black</h2>
+				<h3>Пригородный дом на окраине Бечичи</h3>
+				<p>Комплекс "Tesita Hill" всего в 50 метрах от песчаного пляжа, в 10 минутах ходьбы от центра курорта. В комплексе предусмотрено: магазины, супермаркет, лоби Бар, ресторан, ателье, открытый бассейн. Все квартиры имеют вид на море!</p>
+				<button class="submit">Заказать</button>
+				<p class="price">Цена от <span>300 000 &euro;</span></p>
+                <button class="more">Подробнее</button>
+				
+				</div>
+			</div>
+		</div>
+	</div>	
 	
-	                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
+		<!-- FOOTER -->
+		<div id="footer">
+			<div class="copy">Copyright 2011. Rielti-Insight</div>
+			<ul>
+				<li><a href="#">Главная</a></li>
+				<li><a href="#">Недвижимость</a></li>
+				<li><a href="#">О нас</a></li>
+				<li><a href="#">О Черногории</a></li>
+				<li><a href="#">Контакты</a></li>
+				<li><a href="#">Приобретения</a></li>
+			</ul>
+				
+				
+				</div>
+		</div>
 </div>
 </body>
 </html>
