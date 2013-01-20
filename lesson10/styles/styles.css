@@ -82,16 +82,18 @@ body {background: url(../images/background.png) repeat-x #fff}
 #content ol li.nomber2 { background:url(../images/number2.png) no-repeat; }
 #content ol li.nomber3 { background:url(../images/number3.png) no-repeat; }
 #content .send ul { margin:30px auto; width: 750px;}
-#content .send li { margin: 0 0 10px 0;}
+#content .send li { margin: 0 0 10px 0;overflow: hidden}
 #content .send label { padding: 15px 19px 0 0; font: 15px Arial, Bold; color: #4B7589; display: block; width: 137px; float:left; text-align: right; }
+#content .send .linote label, #content .send .linote input {float:right;}
+#content .send .linote label {width:300px; margin-right:220px; overflow:hidden}
 #content .send input { padding: 15px 0 16px 12px; background-color: #E8F0F2; color: #4B7589; font: 15px Arial, Regular; color: #4B7589; -webkit-border-radius: 6px; -moz-border-radius: 6px; border-radius: 6px; width: 355px;  }
 #content .send li  textarea { background-color: #E8F0F2; padding: 8px 0 0px 15px; color: #4B7589; width:355px;}
 #content .send input, textarea { border-top: 1px solid #92ACB7; border-left:none; border-right:none; border-bottom:none; }
-#content ul li span.notebook  { display: block; width: 315px; float: left; padding: 5px 0 10px 0; color: #4B7589; overflow:hidden;}
+/*#content ul li span.notebook  { display: block; width: 315px; float: left; padding: 5px 0 10px 0; color: #4B7589; overflow:hidden;}*/
 #content ul li span.error { display:none; color:#E92777; margin-left:3px;}
 #content ul li img.arrow { margin: 12px 19px 18px 21px;}
 #content ul li input.capcha { font: 22px Arial, Regular !important; width: 146px !important; padding: 10px 12px !important; margin:-38px 0 0 0}
-#content ul li input.checkbox { width: 12px !important; margin: 7px 8px 0 5px; float: left; }
+#content ul li input.checkbox { width: 12px !important; margin: 14px 15px 0 5px; float: left; }
 #content  input.submit { margin: 0 0 70px  310px; font: 29px Myriad Pro; color: #FFF; background: url(../images/send.gif) no-repeat;  width: 217px; height: 46px; border: none; text-align: center; padding: 5px 0; }
 
 
