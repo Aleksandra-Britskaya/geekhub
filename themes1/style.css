@@ -1,3 +1,13 @@
+/* CSS Document */
+/*
+Theme Name: themes1
+Theme URI: http://google.com
+Description: my very cool and nice looking theme
+Author: Sasha Britskaya
+Author URI: http://geekhub.ck.ua
+Version: 1.0
+General comments/License Statement if any.
+*/
 html,body                       { width:100%; height:100%; }
 body                            { padding:0; margin:0; font:12px Arial, Regular; background:#fff; color:#000; }
 div,p,a,span,em,strong,img,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,td,tr,form,fieldset,label,select,checkbox,input,textarea {
@@ -31,7 +41,7 @@ a:hover                        { text-decoration:none; color:#45B8FB !important;
 .align-c                       { text-align:center !important; }
 .clear                         { clear:both; }
 
-body { background: url("../images/gradient.jpg") repeat-x #fff;}
+body { background: url("images/gradient.jpg") repeat-x #fff;}
 
 #wrapper { width:780px; margin:0 auto; }
 
@@ -53,12 +63,13 @@ h2 { font: 18px Arial Regular; color:#45B8FB; padding: 9px 0px}
 
 #sidebar { float: left; width: 235px; overflow: hidden;}
 #sidebar h3 { font: 20px Arial Regular; color:#45B8FB;  padding-bottom: 2px; margin-bottom: 16px;}
-#sidebar h3.span { background: url("../images/triangle.png") no-repeat 100% 50%; display: inline; padding-right: 20px;}
+#sidebar h3.span { background: url("images/triangle.png") no-repeat 100% 50%; display: inline; padding-right: 20px;}
 #sidebar li { border-bottom: 1px #CAC9C8 solid; padding: 9px 0 11px 0;}
 #sidebar li.border-non {border-bottom: none;}
-#sidebar a { text-decoration: none; color:#555555; background: url("../images/arrow.png") no-repeat ; padding-left: 20px; }
+#sidebar a { text-decoration: none; color:#555555; background: url("images/arrow.png") no-repeat ; padding-left: 20px; }
 
 
 #footer {}
 #footer p { border-top:  1px #939598 solid; margin-top: 30px;  padding: 10px 0px 30px 10px; color:#939598; font-size:10px !important}
 #footer strong { color:#666666}
+
