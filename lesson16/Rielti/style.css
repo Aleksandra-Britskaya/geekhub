@@ -1,6 +1,13 @@
-/*----------------------------------------------------------------------------------*/
-/*------------------------------RESET DEFAULT STYLES--------------------------------*/
-/*----------------------------------------------------------------------------------*/
+/* CSS Document */
+/*
+Theme Name: Rielti-Insight
+Theme URI: http://google.com
+Description: my very cool and nice looking theme
+Author: Sasha Britskaya
+Author URI: http://geekhub.ck.ua
+Version: 1.0
+General comments/License Statement if any.
+*/
 html,body                       { width:100%; height:100%; }
 body                            { padding:0; margin:0; font:12px Arial, Regular; background:#fff; color:#000; }
 div,p,a,span,em,strong,img,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,td,tr,form,fieldset,label,select,checkbox,input,textarea {
@@ -15,11 +22,9 @@ textarea                       { vertical-align:top; }
 input[type=submit]             { cursor:pointer; }
 img, fieldset                  { border:0; }
 table                          { border-collapse:collapse; border-spacing:0; }
-a:link, a:visited              { font:12px Arial, Regular; text-decoration:underline;}
+a:link ,a:visited             { font:12px Arial, Regular; text-decoration:none;}
 a:hover                        { text-decoration:none; }
-/*----------------------------------------------------------------------------------*/
-/*-------------------------------------DEFAULT CLASSES------------------------------*/
-/*----------------------------------------------------------------------------------*/
+
 .float-r           	           { float:right !important; }
 .float-l                       { float:left !important; }
 .no-float                      { float:none !important; }
@@ -36,44 +41,38 @@ a:hover                        { text-decoration:none; }
 .align-c                       { text-align:center !important; }
 .clear                         { clear:both; }
 
-/*----------------------------------------------------------------------------------*/
-/*-------------------------------------WRAPPER--------------------------------------*/
-/*----------------------------------------------------------------------------------*/
-#wrapper { width:1080px ; margin:0 auto; background:url(../images/background1.png) repeat-x #414141; padding-bottom:40px;}
-#wrapper button { border:none; display:block; width:105px; height:23px;  font-size:12px;  cursor:pointer; margin-bottom:10px; padding-bottom:3px; }
-/*----------------------------------------------------------------------------------*/
-/*-------------------------------------HEADER---------------------------------------*/
-/*----------------------------------------------------------------------------------*/
 
-#header  { background: url(../images/background2.jpg) no-repeat; height: 549px;} 
+#wrapper { width:1080px ; margin:0 auto; background:url(images/background1.png) repeat-x #414141; padding-bottom:40px;}
+#wrapper button { border:none; display:block; width:105px; height:23px;  font-size:12px;  cursor:pointer; margin-bottom:10px; padding-bottom:3px; }
+
+
+#header  { background: url(images/background2.jpg) no-repeat; height: 549px;} 
 #logo { margin:41px 0 1px 136px; width: 306px; height:80px;}
-#header .grey-block { background: url(../images/grey.png); width:811px; height:405px; margin: 0 135px 22px 134px; overflow:hidden; }
+#header .grey-block { background: url(images/grey.png); width:811px; height:405px; margin: 0 135px 22px 134px; overflow:hidden; }
 #header .grey-block #slides { margin:18px 18px; width:515px; height:370px;}
 #slides .slides_container { width:507px; height:362px; border:4px solid #FDFDFD;}
 #slides .slides_container li { width:515px; height:370px; display:block;}
 #slides .prev, #slides .next {color: #000000; font-weight: bold; text-decoration: none; font-size: 18px; line-height: 18px; }
 #slides .next {margin-left: 450px;}
 #slides .prev {margin-left: 20px;}
-#header .grey-block .rt-block  {background: url(../images/background3.jpg); width:242px; height:366px; position:relative; top: -386px;  left: 550px;}
+#header .grey-block .rt-block  {background: url(images/background3.jpg); width:242px; height:366px; position:relative; top: -386px;  left: 550px;}
 #header .grey-block .rt-block .rielti { margin:3px 4px 0;}
 #header .grey-block .rt-block .read { color:#B1B1B1; text-decoration:none;  position:relative; top:-185px; left:29px;}
 #header .grey-block .rt-block .discount { position:relative; top:-135px; }
-#header .submit, #content  .submit { background:url(../images/button.png) no-repeat; color:#FFF;}
+#header .submit, #content  .submit { background:url(images/button.png) no-repeat; color:#FFF;}
 #header .grey-block .rt-block  form  { position:relative; top:-165px; left:16px;}
 #header .grey-block .rt-block  form select { width:211px; margin-bottom:12px; padding-left:6px; color:#ACACAC;}
 #header .lang  { float:right; margin: 100px 116px 8px 0}
 #header .lang li  { float:left; margin-right:21px;}
-#header .lang  li a { width:22px; height:13px; background:url(../images/lang.png) no-repeat; text-indent:-999em; display:block;}
+#header .lang  li a { width:22px; height:13px; background:url(images/lang.png) no-repeat; text-indent:-999em; display:block;}
 #header .lang  li a.eng { background-position:-1px -1px;}
 #header .lang  li a.ru { background-position:-43px -1px;}
 #header .lang  li a.ukr { background-position:-86px -1px;}
 
-/*----------------------------------------------------------------------------------*/
-/*-------------------------------------NAV------------------------------------------*/
-/*----------------------------------------------------------------------------------*/
+
 #navbar { }
-#navbar { background:url(../images/navbar.png) no-repeat; width:813px; height:67px; display:block; margin-left:132px; }
-#navbar .red  { background:url(../images/red.png) no-repeat;}
+#navbar { background:url(images/navbar.png) no-repeat; width:813px; height:67px; display:block; margin-left:132px; }
+#navbar .red  { background:url(images/red.png) no-repeat;}
 #navbar .red  a:hover { background:#CF4223;}
 #navbar  .orange a:hover {background:#FF940B;}
 #navbar  .green a:hover {background:#4CB509;}
@@ -83,33 +82,28 @@ a:hover                        { text-decoration:none; }
 #navbar li a { color:#fff; width:132px; height:39px;  text-align: center; padding-top:27px; display:inline-block; text-decoration:none;}
 #navbar li  { margin-left:3px; width:132px; height:67px;  float:left;}
 
-/*----------------------------------------------------------------------------------*/
-/*-------------------------------------CONTEINER--------------------------------------*/
-/*----------------------------------------------------------------------------------*/
+
 #conteiner {  padding:24px 135px 29px 134px; overflow:hidden; width:813px;}
 
-/*----------------------------------------------------------------------------------*/
-/*-------------------------------------CONTENT--------------------------------------*/
-/*----------------------------------------------------------------------------------*/
+
 #content { float:right; width:676px;  }
 #content .block { background-color:#E9E9E9; border:3px solid #FDFDFD; overflow:hidden; margin-bottom:5px; }
-#content .block img { float:left; }
+#content .block img { float:left; width:404px; height:304px;}
 #content .block .text { float:right; display:block; width:211px; padding:15px 27px 0px 23px;}
-#content  .block .text  h2 { color:#C1341B; font:21px Myriad Pro, bold;}
+#content  .block .text  h2 a { color:#C1341B; font:21px Myriad Pro, bold; padding-top:13px; padding-bottom:15px;}
 #content  .block .text h3 { font:14px Arial, Regular; padding-top:13px; padding-bottom:15px; width: 190px;}
-#content  .block .text p { font:11px Arial, Regular; margin-bottom:20px;}
+#content  .block .text p { font:11px Arial, Regular; margin-bottom:20px; padding-top:13px;}
 #content  .block .text span { color:#C1341B; font:bold 15px Lucida Sans, Regular; display:block;}
 #content  .block .text p.price { float:right; width:95px; margin-bottom:1px; margin-top:-10px; font: bold 12px Myriad Pro, Regular;}
-#content  .block .text .more { background:url(../images/button-wh.png) no-repeat; color:#000;}
+#content  .block .text a.more { background:url(images/button-wh.png) no-repeat; color:#000; display:block; width:105px; height:22px; padding:2px 0 0 20px;}
 
-/*----------------------------------------------------------------------------------*/
-/*-------------------------------------SIDEBAR--------------------------------------*/
-/*----------------------------------------------------------------------------------*/
+
+
 #sidebar  { float:left; width:132px; }
 #sidebar a:link { color:#434343 !important; text-decoration:none;}
 #sidebar a:visited  { color:#434343 !important; }
 #sidebar  ul { background-color:#E9E9E9; border:3px solid #FDFDFD; margin-bottom:4px; padding-bottom:5px;}
-#sidebar  li, #content .section .info .red-w  { background:url(../images/line2.png) no-repeat; background-position:bottom; padding:9px 0 11px 18px; }
+#sidebar  li, #content .section .info .red-w  { background:url(images/line2.png) no-repeat; background-position:bottom; padding:9px 0 11px 18px; }
 #sidebar  li a { text-decoration:none; }
 #sidebar .red-w { color:#AC3022;}
 #sidebar  input { width:90px; border-radius:6px 6px; border:none; padding:1px 0 2px 4px; color:#ACACAC; font:12px Myriad Pro, Regular;}
@@ -118,9 +112,6 @@ a:hover                        { text-decoration:none; }
 #sidebar .info li.red-w {margin-top:6px; margin-bottom:7px;}
 
 
-/*----------------------------------------------------------------------------------*/
-/*-------------------------------------FOOTER---------------------------------------*/
-/*----------------------------------------------------------------------------------*/
 #footer { width:813px; margin-left:134px; color:#fff; }
 #footer ul li  { display:inline-block; }
 #footer li a { color:#fff; text-decoration:none; text-align:center; margin-right:40px;}
