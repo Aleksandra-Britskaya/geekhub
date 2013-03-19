@@ -1,3 +1,13 @@
+/* CSS Document */
+/*
+Theme Name: DVO
+Theme URI: http://google.com
+Description: my very cool and nice looking theme
+Author: Sasha Britskaya
+Author URI: http://geekhub.ck.ua
+Version: 1.0
+General comments/License Statement if any.
+*/
 html,body                       { width:100%; height:100%; }
 body                            { padding:0; margin:0; font:12px Arial, Regular; background:#fff; color:#000; }
 div,p,a,span,em,strong,img,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,td,tr,form,fieldset,label,select,checkbox,input,textarea {
@@ -33,27 +43,35 @@ a:hover                        { text-decoration:none; }
 
 body {background: url(images/background.png) repeat-x #fff; }
 
-#wrapper { width:1055px ; margin:0 auto; background:#fff; height:100%;}
+#wrapper { width:1055px ; margin:0 auto;  height:100%; }
+#wrapper div { background:#fff;}
 
 #header { overflow:hidden;}
 #logo { float:left; margin:27px 0 25px 23px;}
 #header .nav  { margin-top:30px; margin-left:340px;}
 #header .nav  li  a { float:left; padding:10px 35px; border-right: 1px solid #CCC; font: 18px Myriad Pro, Regular;}
 #header .nav  li  a:hover { background: url(images/hover-button.png) no-repeat; color:#fff; background-position:center;}
-#header .nav  .none-border a { border-right:0px; width:80px; }
-#header .phone { margin-top:5px; float:right; background: url(images/phone.png) no-repeat; width:168px; height:31px; font-size:24px; color:#1F93EB; padding:2px 0 0 26px;}
-.post #header .phone { margin-top:5px; float:right; background: url(images/dark-tel.png) no-repeat; width:168px; height:31px; font-size:24px; color:#495B9D; padding:2px 0 0 26px; }
-.page #header  .nav { margin-left:270px;}
-.page #header  .phone { background: url(images/dark-tel.png) no-repeat; color:#495B9D;}
-
+#header .nav  .none-border a, #header .nav  .last a  { border-right:0px; width:80px; }
+#header .phone { margin-top:5px; float:right; background:url(images/dark-tel.png) no-repeat; color:#495B9D; width:168px; height:31px; font-size:24px; padding:2px 0 0 26px;}
 
 #conteiner { overflow:hidden;}
 #conteiner .images a { display:block; float:left; }
 #conteiner .images #video { margin-left:11px;}
 #conteiner .images #map { margin:10px 0 0 11px;}
 
+/* sidebar для главной*/
 
-#sidebar { width:326px; float:left;}
+#sidebar.nav2 { width:100% ;}
+#sidebar .nav2 .conference, .page #sidebar .conference {background: url(images/conference.png) no-repeat; }
+#sidebar .nav2, .page #sidebar .nav2   {  margin-left:40px;height:101px; }
+#sidebar .nav2  li , .page #sidebar  .nav2 li { float:left; height:81px; margin-right:25px; margin-top:20px; max-width:145px; padding-left:80px;}
+#sidebar .nav2 .mail, .page #sidebar .nav2 .mail { background: url(images/mail.png) no-repeat;}
+#sidebar .nav2 .phone2, .page #sidebar .nav2 .phone2 { background: url(images/phone2.png) no-repeat;}
+#sidebar .nav2 .office, .page #sidebar  .office {background: url(images/office.png) no-repeat; }
+#sidebar .nav2 .conference, .page #sidebar .conference {background: url(images/conference.png) no-repeat; }
+
+/* sidebar для post*/
+
 #sidebar .feedback { width:290px; margin:80px 0 0 36px; clear:right; }
 #sidebar .feedback  li { border:1px solid #CCC; border-radius:8px; padding:16px 0 16px 18px;}
 #sidebar .feedback .grey-tel { background: url(images/grey-tel.png) no-repeat; background-position:247px center; height:38px;  padding-right:27px;}
@@ -62,6 +80,9 @@ body {background: url(images/background.png) repeat-x #fff; }
 #sidebar .feedback .grey-mail span, .earth span { font:14px Arial, Regular; color:#495B9D;}
 #sidebar .feedback .grey-tel span, .skype span { font:24px Arial, Regular; color:#495B9D;}
 #sidebar .feedback h4 { font:14px Arial, Regular; color:#7A7B7F;}
+
+/* sidebar для page*/
+.post #sidebar, .page #sidebar { width:326px; float:left;}
 .page #sidebar .feedback { width:270px; margin:28px 0 0 36px;}
 .page #sidebar .feedback .grey-tel { background-position:230px center;}
 .page #sidebar .feedback .grey-mail { background-position:227px center; height:30px;}
@@ -70,14 +91,9 @@ body {background: url(images/background.png) repeat-x #fff; }
 .page #sidebar .nav2 li#none-border  { border-bottom:0px;} 
 
 #content {}
-#content .nav2, .page #sidebar .nav2   {  margin-left:40px;height:101px; }
-#content .nav2  li , .page #sidebar  .nav2 li { float:left; height:81px; margin-right:25px; margin-top:20px; max-width:145px; padding-left:80px;}
-#content .nav2 .mail, .page #sidebar .nav2 .mail { background: url(images/mail.png) no-repeat;}
-#content .nav2 .phone2, .page #sidebar .nav2 .phone2 { background: url(images/phone2.png) no-repeat;}
-#content .nav2 .office, .page #sidebar  .office {background: url(images/office.png) no-repeat; }
-#content .nav2 .conference, .page #sidebar .conference {background: url(images/conference.png) no-repeat; }
 #content .text {clear:both; border-top: 1px solid #CCC; margin:0 40px; padding-top:25px;}
-#content .text h2 { width:358px; height:135px; float:left;  }
+#content .text h2 a { width:358px; height:100px; float:left; font-size:18px; font-weight:bold; color:#000;}
+#content .text a.more { color:#359CCB; margin-top:10px; float:left; }
 #content .orange-block { margin: 10px 25px 18px 40px; clear:both; height:180px;}
 #content .orange-block  li { float:left;  }
 #content .orange-block .big { margin-top:-8px;}
@@ -94,10 +110,10 @@ body {background: url(images/background.png) repeat-x #fff; }
 #footer span.more { font:14px Arial, Regular; color:#A3A3A3; margin-left:27px; margin-top:-10px; padding:15px 0 15px 28px; border-left: 1px solid #CCC;float:left; }
 #footer .icons { float:left;}
 #footer .icons li { float:left; width:30px; padding-left:13px;}
-.post #footer, .page #footer  { margin:0 36px 0 36px; border-top:1px solid #CCC; width:982px; padding-top:30px;  }
-.post #footer  .DVO, .page #footer  .DVO{ width:125px; float:left; margin:0px 0px 0px 45px; color:#359CCB;}
-.post #footer  .services, .page #footer  .services  { width:100px; float:left; margin:0px 29px 0px 29px; color:#359CCB;}
-.post #footer  .first, .page #footer  .first { color:#080808; font-weight: bold; padding-bottom:5px;}
-.post #footer #like-fb, .page #footer #like-fb{ float:left;}
-.post #footer  span.copy, .page #footer  span.copy { float:left; margin-left:50px; color:#757A80;}
-.post #footer span.follow, .page #footer span.follow { margin-left:0px;}
+#footer  { margin:0 36px 0 36px; border-top:1px solid #CCC; width:982px; padding-top:30px;  }
+#footer  .DVO{ width:125px; float:left; margin:0px 0px 0px 45px; color:#359CCB;}
+#footer  .services { width:100px; float:left; margin:0px 29px 0px 29px; color:#359CCB;}
+#footer  .first { color:#080808; font-weight: bold; padding-bottom:5px;}
+#footer #like-fb { float:left;}
+#footer  span.copy { float:left; margin-left:50px; color:#757A80;}
+#footer span.follow { margin-left:0px;}

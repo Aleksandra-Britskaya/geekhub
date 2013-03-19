@@ -10,11 +10,20 @@ if ( function_exists('register_sidebar') )
 	
 if(function_exists('register_nav_menus')){
     register_nav_menus(array(
-        'nav_menu_dvo'=> 'Горизонтальное меню',
+        'nav_dvo'=> 'Горизонтальное меню',
     ));
 }
 
 if ( function_exists( 'add_theme_support' ) ) {
   add_theme_support( 'post-thumbnails' );
-}	
+}
+	
+function wpb_first_and_last_menu_class($items) {
+    $items[1]->classes[] = 'first';
+    $items[count($items)]->classes[] = 'last';
+    return $items;
+}
+add_filter('wp_nav_menu_objects', 'wpb_first_and_last_menu_class');
+
 ?>
+
